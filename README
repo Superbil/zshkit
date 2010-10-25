@@ -1,5 +1,5 @@
 # Install
-* git clone git@github.com:simplogical/zshkit.git
+* git clone git://github.com/Superbil/zshkit.git
 * cd zshkit
 * install
 
