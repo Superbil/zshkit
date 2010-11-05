@@ -1,0 +1,6 @@
+if  [[ -x 'which brew' ]]; then
+    alias b='brew'
+    alias bs='brew search'
+    alias bi='brew install'
+    alias bui='brew uninstall'
+fi
