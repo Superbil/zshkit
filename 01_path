@@ -1,9 +1,10 @@
-# I want /opt/local/bin to take precedence
-path=(/opt/local/bin $path)
-
-# Allow MacPorts man pages
-manpath=($manpath /opt/local/man)
+path=(/usr/libexec/ $path)
 
 # Allow Brew path
-path=(/usr/local/sbin $path)
-path=(/usr/local/bin $path)
+path=(/usr/local/sbin /usr/local/bin $path)
+
+# Set homebrew's manpath
+if [[ -x `which brew` ]]; then
+  manpath=(/usr/share/man /usr/local/share/man $manpath)
+fi
+
