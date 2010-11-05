@@ -1,2 +1,2 @@
 #alias dev="cd ~/Development"
-
+alias amule='open -a aMule'
