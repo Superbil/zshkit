@@ -5,9 +5,16 @@ path=(/usr/local/sbin /usr/local/bin $path)
 
 # Set homebrew's manpath
 if [[ -x `which brew` ]]; then
-  manpath=(/usr/share/man /usr/local/share/man $manpath)
+    manpath=(/usr/share/man /usr/local/share/man $manpath)
 fi
 
 # set gsutil path
-path=($HOME/project/gsutil $path)
+    path=($HOME/project/gsutil $path)
 pythonpath=(${PYTHONPATH} $HOME/project/gsutil/boto)
+
+# setup z script
+
+. /Users/superbil/project/z/z.sh
+function precmd () {
+    z --add "$(pwd -P)"
+}
