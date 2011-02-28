@@ -9,12 +9,12 @@ if [[ -x `which brew` ]]; then
 fi
 
 # set gsutil path
-    path=($HOME/project/gsutil $path)
+path=($HOME/project/gsutil $path)
 pythonpath=(${PYTHONPATH} $HOME/project/gsutil/boto)
 
 # setup z script
 
-. /Users/superbil/project/z/z.sh
+path=($HOME/project/z/z.sh $path)
 function precmd () {
     z --add "$(pwd -P)"
 }
