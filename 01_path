@@ -13,8 +13,7 @@ path=($HOME/project/gsutil $path)
 pythonpath=(${PYTHONPATH} $HOME/project/gsutil/boto)
 
 # setup z script
-
-path=($HOME/project/z/z.sh $path)
+. $HOME/project/z/z.sh
 function precmd () {
     z --add "$(pwd -P)"
 }
