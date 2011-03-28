@@ -1,6 +1,6 @@
 if  [[ -x `which brew` ]]; then
     alias b='brew'
     alias bs='brew search'
-    alias bi='brew install'
+    alias bi='brew install --use-llvm'
     alias bui='brew uninstall'
 fi
