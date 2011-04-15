@@ -26,8 +26,10 @@ if [[ -x `which brew` ]]; then
 fi
 
 # set gsutil path
-path=($HOME/project/gsutil $path)
-pythonpath=(${PYTHONPATH} $HOME/project/gsutil/boto)
+if [[ -x $HOME/project/gsutil ]]; then
+   path=($HOME/project/gsutil $path)
+   pythonpath=(${PYTHONPATH} $HOME/project/gsutil/boto)
+fi
 
 
 # Query the gem configuration to get the correct path
