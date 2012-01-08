@@ -4,3 +4,4 @@ if  [[ -x `which brew` ]]; then
     alias bi='brew install --use-llvm'
     alias bui='brew uninstall'
 fi
+# vim: set syn=zsh:

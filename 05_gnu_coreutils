@@ -7,3 +7,4 @@ if [[ -x brew ]]; then
       unalias [
   fi
 fi
+# vim: set syn=zsh:

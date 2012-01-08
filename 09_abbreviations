@@ -86,3 +86,4 @@ noglob-command-line() {
     [[ $BUFFER != noglob\ * ]] && BUFFER="noglob $BUFFER"
 }
 zle -N noglob-command-line
+# vim: set syn=zsh:
