@@ -27,10 +27,14 @@ fi
 
 # set gsutil path
 if [[ -x $HOME/project/gsutil ]]; then
-   path=($HOME/project/gsutil $path)
-   pythonpath=(${PYTHONPATH} $HOME/project/gsutil/boto)
+  path=($HOME/project/gsutil $path)
+  pythonpath=(${PYTHONPATH} $HOME/project/gsutil/boto)
 fi
 
+# setup depot_tools
+if [[ -x $HOME/project/depot_tools ]]; then
+  path=($HOME/project/depot_tools $path)
+fi
 
 # Query the gem configuration to get the correct path
 # XXX: This might cause problems if you alias 'gem' to something else after the path has been setup.
