@@ -1,4 +1,6 @@
-export PYTHONPATH=$HOME/.python_libraries
+# Set brew-pip path
+export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
+
 typeset -U PYTHONPATH
 
 alias pylab='ipython -pylab -wthread'
