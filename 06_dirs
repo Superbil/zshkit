@@ -1,2 +1,3 @@
+#!/usr/bin/env zsh
 alias fd=pushd
 alias sd=popd

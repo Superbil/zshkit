@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # See From Bash to Z Shell,  Page: 101 
 if [[ $(whence -v run-help) == 'run-help is a shell function' ]]; then
         unalias run-help

@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 HISTFILE=~/.history
 HISTSIZE=10500
 SAVEHIST=10000

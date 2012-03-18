@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 bindkey "${key[C-A]}" beginning-of-line
 bindkey "${key[C-E]}" end-of-line
 bindkey "${key[C-D]}" delete-char

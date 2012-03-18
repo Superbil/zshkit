@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 if [[ -x `which git` ]]; then
 	mydir=`dirname $0`
 	if [[ $mydir = . ]]; then

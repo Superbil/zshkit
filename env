@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 if [[ $SHLVL < 4 ]]; then
 	mydir=`dirname $0`
 

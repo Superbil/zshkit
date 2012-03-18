@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # Look for apt, and add some useful functions if we have it.
 if [[ -x `which apt-get` ]]; then
   alias apt-get='noglob sudo apt-get'

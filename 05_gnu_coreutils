@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # Include GNU coreutils aliases if installed via homebrew
 if [[ -x brew ]]; then
   ALIASES=$(brew --prefix coreutils)/aliases

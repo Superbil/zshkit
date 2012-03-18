@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # Setup some pretty colours for less. 
 # Unless we're using a terminal where everything just blinks.
 autoload -U is-mac-terminal

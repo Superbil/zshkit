@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 if [[ -e /Applications/Octave.app/Contents/Resources/bin/octave ]]; then
   alias octave='/Applications/Octave.app/Contents/Resources/bin/octave -q'
 else

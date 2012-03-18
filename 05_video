@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # See: http://omino.com/sw/qt_tools/
 if [[ -x `which qt_export` ]]; then
   create_image_mov() {

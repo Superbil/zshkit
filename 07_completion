@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # Files to ignore during completion
 fignore=(DS_Store $fignore)
 
