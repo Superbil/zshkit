@@ -1,3 +1,4 @@
+#!zsh
 # Themable prompt with vcs_info support. 
 # 	No twiddly crap - just prompty goodness.
 #   Requires zshkit: http://github.com/mattfoster/zshkit/tree/master/06_git
@@ -18,7 +19,7 @@ function prompt_minimal_vcs_setup {
   
   # Colours accepted as arguments
   d_col=${1:-'blue'}
-  b_col=${2-'yellow'}
+  b_col=${2:-'yellow'}
   n_tru=${3:-'blue'}
   n_fal=${4:-'red'}
   # I've no idea why the %F style colours don't work when SHLVL == 1
