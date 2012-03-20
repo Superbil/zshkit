@@ -2,4 +2,3 @@
 #alias dev="cd ~/Development"
 alias amule='open -a aMule'
 alias screen='screen -RD'
-alias emacs="/usr/local/Cellar/emacs/23.4/Emacs.app/Contents/MacOS/Emacs -nw"
