@@ -85,6 +85,7 @@ if [[ -x `which git` ]]; then
 
   alias g='git'
   alias gb='git branch -a -v'
+  alias gbr='git branch'
   alias gs='git status'
   alias gss="git submodule foreach \"git status; true\""
   alias gd='git diff'
