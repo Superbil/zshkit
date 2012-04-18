@@ -1,4 +1,3 @@
-#!/usr/bin/env zsh
 # Set Python path on brew
 if [[ -x $(brew --prefix)/share/python ]]; then
   path=($(brew --prefix)/share/python $path)

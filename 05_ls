@@ -1,4 +1,3 @@
-#!/usr/bin/env zsh
 if [[ -x `which gls` ]]; then
 	alias rls=`which ls`
 	alias ls='gls -h --color=auto '

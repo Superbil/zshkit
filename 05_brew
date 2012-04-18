@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
 if  [[ -x `which brew` ]]; then
     alias b='brew'
     alias be='brew edit'

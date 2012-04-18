@@ -1,4 +1,3 @@
-#!/usr/bin/env zsh
 if [[ -x `which git` ]]; then
 	alias g=git
 	git_enable=1

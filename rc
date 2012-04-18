@@ -1,4 +1,3 @@
-#!/usr/bin/env zsh
 setopt nobeep	            # No beeping
 setopt AUTOPUSHD PUSHDMINUS PUSHDSILENT PUSHDTOHOME
 setopt AUTOCD			    # cd by typing dirname

@@ -1,4 +1,3 @@
-#!/usr/bin/env zsh
 # Open manpage with Preview.app
 # Uses ps2pdf conversion because it's faster
 if [[ $OSTYPE[1,6] == "darwin" ]]; then
