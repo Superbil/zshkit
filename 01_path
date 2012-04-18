@@ -99,5 +99,3 @@ for dir ($helpdirs) {
 }
 
 typeset -gU path cdpath manpath fpath helpdir
-
-# vim: set syn=zsh:

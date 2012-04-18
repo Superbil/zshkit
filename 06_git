@@ -112,4 +112,3 @@ fi
 if [[ -x `which git-flow` ]]; then
     alias gfl='git flow'
 fi
-# vim: set syn=zsh:

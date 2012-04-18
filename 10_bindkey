@@ -13,4 +13,3 @@ bindkey "^Os" sudo-command-line
 
 bindkey "^[^[[D" backward-word 
 bindkey "^[^[[C" forward-word
-

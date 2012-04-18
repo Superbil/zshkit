@@ -20,4 +20,3 @@ alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
 alias lt='ls -Alt'
-# vim: set syn=zsh:

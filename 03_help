@@ -60,4 +60,3 @@ H-Glob() {
      print **/*(g:users:)  # Recursively list files with the group 'users'
      echo /proc/*/cwd(:h:t:s/self//) # Analogue of >ps ax | awk '{print $1}'<"
 }
-# vim: set syn=zsh:

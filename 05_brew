@@ -1,4 +1,3 @@
-#!/bin/zsh
 if  [[ -x `which brew` ]]; then
     alias b='brew'
     alias be='brew edit'
@@ -7,4 +6,3 @@ if  [[ -x `which brew` ]]; then
     alias bin='brew info'
     alias bui='brew uninstall'
 fi
-# vim: set syn=zsh:

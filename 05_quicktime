@@ -18,4 +18,3 @@ if [[ -x `which qt_export` ]]; then
     fi
   }
 fi
-# vim: set syn=zsh:

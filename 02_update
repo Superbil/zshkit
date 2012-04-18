@@ -14,4 +14,3 @@ if [[ -x `which git` ]]; then
 		popd
 	}
 fi
-# vim: set syn=zsh:
