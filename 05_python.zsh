@@ -10,3 +10,6 @@ export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
 typeset -U PYTHONPATH
+
+# Load python rc on $HOME/.pythonrc
+[[ -s $HOME/.pythonrc ]] && export PYTHONSTARTUP=$HOME/.pythonrc
