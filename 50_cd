@@ -1,3 +1,4 @@
+#!/usr/bin/env zsh
 # where have we been?
 DIRSTACKSIZE=8
 setopt autopushd pushdminus pushdsilent pushdtohome

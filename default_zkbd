@@ -27,3 +27,12 @@ key[Menu]=''
 key[C-A]='^A'
 key[C-E]='^E'
 key[C-D]='^D'
+key[C-F]='^F'
+key[C-B]='^B'
+key[C-N]='^N'
+key[C-P]='^P'
+
+key[C-R]='^R'
+
+key[C-K]='^K'
+key[C-U]='^U'
