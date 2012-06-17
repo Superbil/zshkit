@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+# HomeBrew setting
+
+# Allow Path
+path=(/usr/local/sbin /usr/local/bin $path)
+
+# Set Manpath
+if [[ -x `which brew` ]]; then
+    manpath=(/usr/share/man /usr/local/share/man $manpath)
+fi
