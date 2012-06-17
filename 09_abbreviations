@@ -21,7 +21,6 @@ abbrevs=('...' '../..'
 	 'n' 'nohup'
          'j' 'jobs -l'
          'CH' "./configure --help"
-         'dir' 'ls -lSrah'
          'lad' $'ls -d .*(/)\n# only show dot-directories'
          'lsa' $'ls -a .*(.)\n# only show dot-files'
          'lss' $'ls -l *(s,S,t)\n# only files with setgid/setuid/sticky flag'
