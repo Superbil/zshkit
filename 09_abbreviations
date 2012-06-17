@@ -18,6 +18,7 @@ abbrevs=('...' '../..'
          'S' '| sort -u'
          'T' '| tail'    
          'da' 'du -sch'
+	 'n' 'nohup'
          'j' 'jobs -l'
          'CH' "./configure --help"
          'dir' 'ls -lSrah'
