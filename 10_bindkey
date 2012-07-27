@@ -1,17 +1,35 @@
 #!/usr/bin/env zsh
+
+# jump to line begin or end
 bindkey "${key[C-A]}" beginning-of-line
 bindkey "${key[C-E]}" end-of-line
-bindkey "${key[C-D]}" delete-char
-
 bindkey "${key[Home]}" beginning-of-line
 bindkey "${key[End]}" end-of-line
+
+bindkey "${key[C-D]}" delete-char
+bindkey "${key[C-H]}" backward-delete-char
+
+# move by char
+bindkey "${key[C-F]}" forward-char
+bindkey "${key[C-B]}" backward-char
+
+# move by word
+bindkey "^[${key[C-D]}" backward-word
+bindkey "^[${key[C-C]}" forward-word
+
+# read history
+bindkey "${key[C-N]}" down-history
+bindkey "${key[C-P]}" up-history
+
+# buffer
+bindkey "${key[C-K]}" kill-line
+bindkey "${key[C-Y]}" yank
+
+bindkey "${key[C-/]}" undo
+bindkey "${key[F2]}" help-abbrevs
 
 bindkey "  " globalias
 bindkey " " magic-space
 
-bindkey "^Og" noglob-command-line
-bindkey "^Os" sudo-command-line
-
-bindkey "^[^[[D" backward-word 
-bindkey "^[^[[C" forward-word
-
+bindkey "${key[C-O]}g" noglob-command-line
+bindkey "${key[C-O]}s" sudo-command-line
