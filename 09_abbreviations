@@ -16,9 +16,9 @@ abbrevs=('...' '../..'
          'R' '| tr A-z N-za-m'
          'SL' '| sort | less'
          'S' '| sort -u'
-         'T' '| tail'    
+         'T' '| tail'
          'da' 'du -sch'
-	 'n' 'nohup'
+         'n' 'nohup'
          'j' 'jobs -l'
          'CH' "./configure --help"
          'lad' $'ls -d .*(/)\n# only show dot-directories'
@@ -49,7 +49,7 @@ abbrevs=('...' '../..'
  )
 
 # Create global aliases from the abbreviations.
-for abbr in ${(k)abbrevs}; do 
+for abbr in ${(k)abbrevs}; do
  alias -g $abbr="${abbrevs[$abbr]}"
 done
 
