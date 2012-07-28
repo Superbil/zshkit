@@ -84,13 +84,13 @@ if [[ -x `which git` ]]; then
 	}
 
   alias g='git'
-  alias gb='git branch -a -v'
+  alias gbr='git branch -a -v'
   alias gbr='git branch'
   alias gs='git status'
   alias gss="git submodule foreach \"git status; true\""
-  alias gd='git diff'
-  alias gf='git fetch'
-  alias gr='git rebase'
+  alias gdf='git diff'
+  alias gfe='git fetch'
+  alias grb='git rebase'
   alias gci='git commit'
   alias glg='git log -p'
   alias glol='git log --graph --decorate --oneline'
@@ -101,7 +101,7 @@ if [[ -x `which git` ]]; then
   alias gsf='git-svn fetch'
   # gc      => git checkout master
   # gc bugs => git checkout bugs
-  function gc {
+  function gco {
   if [ -z "$1" ]; then
     git checkout master
     else
