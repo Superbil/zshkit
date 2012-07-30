@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+  emacs_path=/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs
+
+if [[ -x $emacs_path ]]; then
+  alias emacs="$emacs_path -nw"
+fi
