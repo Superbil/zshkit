@@ -1,19 +1,12 @@
 #!/usr/bin/env zsh
 
-if [[ -x $(which brew) ]]; then
-
-    # Set Python path on brew
-    if [[ -x $(brew --prefix)/share/python ]]; then
-        path=($(brew --prefix)/share/python $path)
-
-    # Set brew-pip path
-        export PYTHONPATH=$(brew --prefix)/lib/python2.7/site-packages
-    fi
-fi
-
 # Set pythonbrew
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
-typeset -U PYTHONPATH
+# Set pip need virtualenv
+export PIP_REQUIRE_VIRTUALENV=true
+
+# Set pip auto start virtualenv
+export PIP_RESPECT_VIRTUALENV=true
 
 # vim: set syn=zsh:
