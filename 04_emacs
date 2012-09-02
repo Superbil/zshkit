@@ -1,7 +1,9 @@
 #!/usr/bin/env zsh
 
-  emacs_path=/usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs
+if [[ -x `which brew` ]]; then
+  EMACS_PATH=$(brew --prefix emacs)/Emacs.app/Contents/MacOS/Emacs
 
-if [[ -x $emacs_path ]]; then
-  alias emacs="$emacs_path -nw"
+  if [[ -x $EMACS_PATH ]]; then
+    alias emacs="$EMACS_PATH -nw"
+  fi
 fi
