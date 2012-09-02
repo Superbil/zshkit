@@ -21,9 +21,6 @@ if [[ ($EDITOR == 'mvim' || $EDITOR == 'gvim') && -z $SSH_CLIENT ]]; then
     export GIT_EDITOR="$EDITOR -f" # Don't fork.
 fi
 
-# Print a warning if there's still no editor set.
-[[ -z $EDITOR ]] && print 'No editor set.'
-
 # TextMate specific stuff:
 if [[ $EDITOR == 'mate' && -x $(which bundle) && -n $(bundle) && $? = 0 && -z $SSH_CLIENT ]]; then
 	EDITOR="mate -w"
@@ -39,6 +36,9 @@ if [[ $EDITOR == 'mate' && -x $(which bundle) && -n $(bundle) && $? = 0 && -z $S
       compadd $(print -l $bundle_path/*.tmbundle(:t:r))
     }
 fi
+
+# Print a warning if there's still no editor set.
+[[ -z $EDITOR ]] && print 'No editor set.'
 
 # Set EDITOR as default for plaintext stuff
 for s in txt tex c cc cxx cpp gp m md markdown otl; do
