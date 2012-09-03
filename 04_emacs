@@ -4,7 +4,7 @@ if [[ -x `which brew` ]]; then
   EMACS_PATH=$(brew --prefix emacs)/bin/emacsclient
 
   if [[ -x $EMACS_PATH ]]; then
-    alias emacs="$EMACS_PATH -nw"
+    alias emacs="$EMACS_PATH"
     if [[ -z $SSH_CLIENT ]]; then
         alias emacs="$EMACS_PATH -t"
     fi
