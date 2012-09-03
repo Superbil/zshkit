@@ -21,6 +21,9 @@ bindkey "^[${key[C-C]}" forward-word
 bindkey "${key[C-N]}" down-history
 bindkey "${key[C-P]}" up-history
 
+# search in history
+bindkey "${key[C-R]}" history-incremental-search-backward
+
 # buffer
 bindkey "${key[C-K]}" kill-line
 bindkey "${key[C-Y]}" yank
@@ -33,3 +36,4 @@ bindkey " " magic-space
 
 bindkey "${key[C-O]}g" noglob-command-line
 bindkey "${key[C-O]}s" sudo-command-line
+
