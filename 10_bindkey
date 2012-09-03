@@ -18,8 +18,8 @@ bindkey "^[${key[C-D]}" backward-word
 bindkey "^[${key[C-C]}" forward-word
 
 # read history
-bindkey "${key[C-N]}" down-history
-bindkey "${key[C-P]}" up-history
+bindkey "${key[C-N]}" down-line-or-history
+bindkey "${key[C-P]}" up-line-or-history
 
 # search in history
 bindkey "${key[C-R]}" history-incremental-search-backward
