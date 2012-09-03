@@ -1,5 +1,8 @@
 #!/usr/bin/env zsh
 
+# emacs mode
+bindkey -e
+
 # jump to line begin or end
 bindkey "${key[C-A]}" beginning-of-line
 bindkey "${key[C-E]}" end-of-line
