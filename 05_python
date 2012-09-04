@@ -8,5 +8,3 @@ export PIP_REQUIRE_VIRTUALENV=true
 
 # Set pip auto start virtualenv
 export PIP_RESPECT_VIRTUALENV=true
-
-# vim: set syn=zsh:
