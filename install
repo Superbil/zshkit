@@ -9,7 +9,7 @@ mkdir -p $HOME/.zsh/
 ln -s $mydir/func $HOME/.zsh/func
 
 echo My Directory: $mydir
-cp $HOME/.zshenv $HOME/.zshenv.pre_zshkit
-cp $HOME/.zshrc $HOME/.zshrc.pre_zshkit
+[ -x $HOME/.zshenv ] || cp $HOME/.zshenv $HOME/.zshenv.pre_zshkit
+[ -x $HOME/.zshrc ] || cp $HOME/.zshrc $HOME/.zshrc.pre_zshkit
 echo "source $mydir/env" > $HOME/.zshenv
 echo "source $mydir/rc" > $HOME/.zshrc
