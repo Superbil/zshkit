@@ -1,5 +1,1 @@
 #!/usr/bin/env zsh
-alias pro="cd ~/project"
-alias amule='open -a aMule'
-alias screen='screen -RD'
-alias less='/usr/share/vim/vim73/macros/less.sh'
