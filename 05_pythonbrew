@@ -3,11 +3,8 @@
 # Set pythonbrew
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
-# Set alias
-[[ -x `which pythonbrew` ]] || alias pb=pythonbrew
-
-# Set pip need virtualenv
-export PIP_REQUIRE_VIRTUALENV=true
-
-# Set pip auto start virtualenv
-export PIP_RESPECT_VIRTUALENV=true
+# Setup python site-packages
+PYTHON_PACKAGES=/usr/local/share/python
+if [[ -d $PYTHON_PACKAGES && -n `brew list | grep python` ]]; then
+    path=($PYTHON_PACKAGES $path)
+fi
